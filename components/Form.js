@@ -10,6 +10,11 @@ export default function Form() {
   let [sourceUnit, setSourceUnit] = useState('');
   let [targetUnit, setTargetUnit] = useState('');
   let [result, setResult] = useState('');
+  // let [autocompleteOptions, setAutocompleteOptions] = useState([
+  //   'egg',
+  //   'edamame',
+  //   'escargot',
+  // ]);
 
   async function converter(
     ingredientName,
@@ -36,7 +41,14 @@ export default function Form() {
     setResult(result.answer);
   }
 
-  //  https://spoonacular.com/food-api/docs#Autocomplete-Ingredient-Search
+  // async function autocomplete(event) {
+  //   const response = await fetch(
+  //     `https://api.spoonacular.com/food/ingredients/autocomplete?apiKey=${APIKEY}&query=${event}&number=20`
+  //   );
+  //   const jsonData = await response.json();
+  //   console.log('autocomplete', jsonData);
+  // }
+
   return (
     <>
       <div className={styles.formContainer}>
@@ -45,8 +57,27 @@ export default function Form() {
           text='Ingredient'
           type='text'
           placeholder='Type your ingredient'
-          handleChange={(event) => setIngredientName(event.target.value)}
+          handleChange={(event) => {
+            setIngredientName(event.target.value);
+            // autocomplete(event.target.value);
+          }}
         />
+        {/* <ul className={styles.autoCompleteList}>
+          {autocompleteOptions
+            ? autocompleteOptions.map((ingridient) => (
+                <li>
+                  <button
+                    className={styles.autoCompleteLi}
+                    onClick={(event) =>
+                      setIngredientName('event: ', event.target.innerHTML)
+                    }
+                  >
+                    {ingridient}
+                  </button>
+                </li>
+              ))
+            : 'hidelist'}
+        </ul> */}
         <div className={styles.measurementContainer}>
           <div>
             <Select

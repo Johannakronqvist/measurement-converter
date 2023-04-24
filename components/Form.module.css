@@ -3,6 +3,7 @@
   border-radius: 4px;
   margin-top: 2rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .measurementContainer {
@@ -18,6 +19,9 @@
 .result {
   padding: 1rem;
   justify-self: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--header-clr);
 }
 
 .button {
@@ -32,4 +36,37 @@
   box-shadow: 3px 5px var(--shadow-clr);
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
+}
+
+.autoCompleteList {
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.autoCompleteLi {
+  background-color: transparent;
+  border: none;
+  color: rgb(143, 143, 143);
+  cursor: pointer;
+}
+
+.autoCompleteLi:hover {
+  color: var(--header-clr);
+}
+
+@media (max-width: 450px) {
+  .formContainer {
+    padding: 1rem 4px;
+  }
+}
+
+@media (max-width: 350px) {
+  .result {
+    font-size: 1rem;
+  }
+
+  .measurementContainer {
+    flex-direction: column;
+  }
 }

@@ -24,3 +24,16 @@
   color: var(--header-clr);
   font-size: 0.9rem;
 }
+
+@media (max-width: 350px) {
+  .logo {
+    color: var(--header-clr);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+
+  .slug {
+    font-size: 0.75rem;
+  }
+}

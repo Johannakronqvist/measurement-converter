@@ -4,3 +4,12 @@
   flex-direction: column;
   text-align: left;
 }
+
+@media (max-width: 450px) {
+  .container {
+    padding: 4px;
+  }
+}
+
+@media (max-width: 350px) {
+}
