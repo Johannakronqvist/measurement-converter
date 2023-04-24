@@ -1,0 +1,26 @@
+.container {
+  background-color: rgb(52, 52, 52);
+  height: 4rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: var(--header-clr);
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.slug {
+  color: var(--header-clr);
+  font-size: 0.9rem;
+}
