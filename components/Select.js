@@ -9,7 +9,7 @@ export default function Select({ name, text, handleChange }) {
       <select id={name} onChange={handleChange}>
         <option value=''>--Choose unit--</option>
         <option value='cups'>cps (cups)</option>
-        <option value='deceliters'>dl (deceliters)</option>
+        <option value='deceliters'>dl (deciliters)</option>
         <option value='grams'>g (grams)</option>
         <option value='kilograms'>kg (kilograms)</option>
         <option value='liters'>l (liters)</option>
@@ -20,7 +20,7 @@ export default function Select({ name, text, handleChange }) {
         <option value='piece'>piece</option>
         <option value='pints'>pt (pint)</option>
         <option value='teaspoons'>tsp (teaspoons)</option>
-        <option value='tablespoons'>tbps (tabelspoons)</option>
+        <option value='tablespoons'>tbps (tablespoons)</option>
       </select>
     </div>
   );
