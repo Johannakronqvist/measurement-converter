@@ -5,7 +5,9 @@ export default function Header() {
     <header className={styles.container}>
       {/* <div className={styles.logoContainer}> */}
       <div className={styles.logo}>Ingredivert</div>
-      <p className={styles.slug}>"Your trusty unit converting tool!"</p>
+      <p className={styles.slug}>
+        &quot;Your trusty unit converting tool!&quot;
+      </p>
       {/* </div> */}
     </header>
   );

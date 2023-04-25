@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <Header />
       <main className={styles.main}>
-        <h1 className={styles.title}>Let's Ingredivert!</h1>
+        <h1 className={styles.title}>Let&apos;s Ingredivert!</h1>
         <Form />
       </main>
     </div>
