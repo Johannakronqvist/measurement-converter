@@ -9,13 +9,13 @@ export default function Select({ name, text, handleChange }) {
       <select id={name} onChange={handleChange}>
         <option value=''>--Choose unit--</option>
         <option value='cups'>cps (cups)</option>
-        <option value='deceliters'>dl (deciliters)</option>
+        {/* <option value='mililiters'>dl (deciliters)</option> */}
         <option value='grams'>g (grams)</option>
         <option value='kilograms'>kg (kilograms)</option>
         <option value='liters'>l (liters)</option>
         <option value='pounds'>lb (pounds)</option>
         <option value='milliliters'>ml (milliliters)</option>
-        <option value='milligrams'>ml (milliliters)</option>
+        <option value='milligrams'>mg (milligrams)</option>
         <option value='oz'>oz (ounce)</option>
         <option value='piece'>piece</option>
         <option value='pints'>pt (pint)</option>
